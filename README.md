@@ -40,18 +40,34 @@ AI-Resume-Analyzer
 
 │
 ├── backend/
-│   ├── main.py              # FastAPI backend
-│   ├── skill_extractor.py   # Skill extraction logic
-│   ├── similarity.py        # Resume–JD similarity scoring
+│   ├── app.py                  # FastAPI entry point
+│   ├── api/
+│   │   └── routes.py            # API endpoints
+│   ├── core/
+│   │   ├── pdf_parser.py        # PDF → text
+│   │   ├── preprocess.py        # Cleaning & NLP
+│   │   ├── skill_extractor.py   # Skill matching
+│   │   ├── matcher.py           # TF-IDF / SBERT logic
+│   │
+│   ├── models/
+│   │   └── sbert_model.py       # Load SBERT model
+│   │
+│   ├── data/
+│   │   └── skills.json          # Skill dictionary
+│   │
+│   └── requirements.txt
 │
 ├── frontend/
-│   └── streamlit_app.py     # Streamlit UI
+│   └── streamlit_app.py         # UI
 │
-├── models/
-│   └── sbert_model/         # Sentence-BERT model
+├── sample_data/
+│   ├── resume.pdf
+│   └── job_description.txt
 │
-├── requirements.txt
 ├── README.md
+├── .gitignore
+└── run.sh
+
 
 ⚙️ How It Works
 
