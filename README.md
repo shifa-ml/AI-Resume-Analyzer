@@ -3,19 +3,19 @@ An AI-powered Resume Analyzer that evaluates resumes against job descriptions, e
 
 This project demonstrates an end-to-end ML application, from document parsing and text processing to semantic similarity and a deployed web interface.
 
-🚀 Features
+ Features
 
-📄 Resume Parsing – Extracts text from PDF resumes
+   Resume Parsing – Extracts text from PDF resumes
 
-🧠 Skill Extraction – Identifies technical skills using NLP
+   Skill Extraction – Identifies technical skills using NLP
 
-📊 Resume–Job Match Score – Semantic similarity using Sentence-BERT
+   Resume–Job Match Score – Semantic similarity using Sentence-BERT
 
-🏷️ Keyword Matching – Highlights missing and matched skills
+   Keyword Matching – Highlights missing and matched skills
 
-🌐 Interactive UI – Built with Streamlit for easy use
+   Interactive UI – Built with Streamlit for easy use
 
-🛠️ Tech Stack
+   Tech Stack
 
 Programming Language: Python
 
@@ -35,7 +35,8 @@ Data Handling: pandas, numpy
 
 PDF Processing: pdfplumber
 
-🧩 Project Architecture
+Project Architecture
+
 AI-Resume-Analyzer
 
 │
@@ -69,7 +70,7 @@ AI-Resume-Analyzer
 └── run.sh
 
 
-⚙️ How It Works
+ How It Works
 
 User uploads a resume (PDF) and provides a job description
 
@@ -83,27 +84,27 @@ A similarity score is computed to estimate job fit
 
 Results are displayed via an interactive Streamlit dashboard
 
-▶️ How to Run Locally
+ How to Run Locally
 
-1️⃣ Clone the repository
+1 Clone the repository
 git clone https://github.com/shifa-ml/Ai-Resume-Analyzer.git
 cd ai-resume-analyzer
 
-2️⃣ Create and activate virtual environment
+2 Create and activate virtual environment
 python -m venv venv
 source venv/bin/activate   # Linux / macOS
 venv\Scripts\activate      # Windows
 
-3️⃣ Install dependencies
+3 Install dependencies
 pip install -r requirements.txt
 
-4️⃣ Start backend (FastAPI)
+4 Start backend (FastAPI)
 uvicorn backend.main:app --reload
 
-5️⃣ Start frontend (Streamlit)
+5 Start frontend (Streamlit)
 streamlit run frontend/streamlit_app.py
 
-📸 Demo
+ Demo
 
 <img width="1299" height="819" alt="Screenshot 2025-12-26 202503" src="https://github.com/user-attachments/assets/7c80c49a-3aae-47b4-af4b-ae8944f39c7f" />
 
@@ -113,23 +114,13 @@ Result
 <img width="967" height="654" alt="image" src="https://github.com/user-attachments/assets/d16ffaa2-1966-4665-9cd2-056fe8a8981d" />
 
 
-📌 Use Cases
+ Use Cases
 
 Students optimizing resumes for internships
 
 Job seekers checking resume–JD alignment
 
 Recruiters performing quick resume screening
-
-🔮 Future Improvements
-
-Resume section-wise scoring
-
-ATS-friendly resume feedback
-
-Support for multiple resumes
-
-Deployment on cloud (AWS / GCP)
 
 👩‍💻 Author
 
